@@ -1,0 +1,45 @@
+table {
+  margin: auto;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.Box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid silver;
+  width: 350px;
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+
+.Box input {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  padding: 10px 5px;
+  border: 1px solid silver;
+  border-radius: 6px;
+}
+
+.Box label {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: gray;
+}
+
+.Wrapper {
+  margin: 0 auto;
+}
+
+.Left {
+  text-align: right;
+}
+
+.Right {
+  text-align: left;
+}
