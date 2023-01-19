@@ -53,11 +53,16 @@ const UserForm = (props) => {
         <label>Contraseña:</label>
         <input type={"password"} onChange={(e) => setPass(e.target.value)} />
       </div>
+      {pass.length < 8 && pass.length > 0 ? (
+        <p className="Alerta">La contraseña debe tener al menos 8 caracteres</p>
+      ) : (
+        ""
+      )}
       <div className="Box">
         <label>Confirmar contraseña:</label>
         <input type={"password"} onChange={(e) => setConfirm(e.target.value)} />
       </div>
-      {pass !== confirm ? (
+      {pass !== confirm && confirm.length > 0 ? (
         <p className="Alerta">Las contraseñas no son iguales.</p>
       ) : (
         ""
