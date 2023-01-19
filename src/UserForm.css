@@ -43,3 +43,11 @@ h1 {
 .Right {
   text-align: left;
 }
+
+.Alerta {
+  padding: 5px;
+  background-color: darkred;
+  color: antiquewhite;
+  border: 1px solid red;
+  border-radius: 5px;
+}
